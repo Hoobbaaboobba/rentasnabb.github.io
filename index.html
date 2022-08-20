@@ -102,16 +102,19 @@
                                 <a href="services.html" id="buttonservice1"><button class="custom-btn btn-15">Услуги</button></a>
                             </li>
                             <li>
-                                <a href="#" id="buttonservice2"><button class="custom-btn btn-16">Связь</button></a>
+                                <a href="#" id="buttonservice2"><button class="custom-btn btn-16" style="width: 120px;">Новости</button></a>
                             </li>
                             <li>
-                                <a href="#" id="buttonservice3"><button class="custom-btn btn-17" style="padding-left: 15px;">Новости</button></a>
+                                <a href="#" id="buttonservice3"><button class="custom-btn btn-17" style="padding-left: 23px; width: 110px;">Отзывы</button></a>
                             </li>
                             <li>
-                                <a href="#" id="buttonservice4"><button class="custom-btn btn-18" style="padding-left: 15px;">Отзывы</button></a>
+                                <a href="#" id="buttonservice4"><button class="custom-btn btn-18" style="padding-left: 20px; width: 160px;">О компании</button></a>
                             </li>
                             <li>
-                                <a href="#requestion" id="buttonservice5"><button class="custom-btn btn-19" onclick="openRequest()" id="request" style="width: 200px;">Заказать звонок</button></a>
+                                <a href="#" id="buttonservice6"><button class="custom-btn btn-22" style="padding-left: 20px; width: 210px;">Доставка и оплата</button></a>
+                            </li>
+                            <li>
+                                <a href="#requestion" id="buttonservice5"><button class="custom-btn btn-19" onclick="openRequest()" id="request" style="width: 190px; padding-left: 23px;">Заказать звонок</button></a>
                             </li>
                             <li>
                                 <a href="#" class="link-search" id="search"></a>
@@ -121,19 +124,19 @@
                 </div>
             </div>
         </header>
-        <a href="#requestion">
-            <div class="phonecall"  onclick="openRequest()">
+        <a href="#requestion" onclick="openRequest()">
+            <div class="phonecall">
                 <img src="images/phone-call-svgrepo-com.svg">
             </div>
         </a>
         <img src="images/BackNavbar1.jpg" alt="" style="width:100%; height:500px;">
         <div class="mainnav">
             <div class="buttons">
-                <div class="contact">
+                <div class="contact" onclick="openRequest()">
                     <button class="custom-btns btn-21">&#11164</button>
                     <p>Связаться с нами</p>
                 </div>
-                <div class="locations">
+                <div class="locations" onclick="openLocation()">
                     <p id="position">Местоположение</p>
                     <button class="custom-btns btn-20">&#11166</button>
                 </div>
@@ -300,7 +303,7 @@
                 </div>
             </div>
         </div>
-        <section class="splide" style="width: 70%; margin: 100px auto 0; border-radius: 15px; height: 275px;">
+        <section class="splide" style="width: 65%; margin: 100px auto 0; border-radius: 15px; height: 275px;">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
@@ -356,7 +359,7 @@
                     <input type="text" id="phone" placeholder="Контактный номер" name="phone" required ondrop="return false;" onpaste="return false;"
                     onkeypress="return event.charCode>=48 && event.charCode<=57" title="Это поле обязательное для ввода">
                     <input type="text" id="post" placeholder="Почта                                           (Необязательно)" name="post">
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Сообщение                                  (Необязательно)"></textarea>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Сообщение"></textarea>
                     <div class="agreement">
                         <label class="checkbox" checked>
                             <input type="checkbox" id="checkbox1" required/>
@@ -464,6 +467,104 @@
                 </g>
                 </svg>
             <button id="okbuttons" onclick="closesentRequests()">ок</button>
+        </div>
+    </div>
+    <div class="map" id="map">
+        <div class="MoscowAndSev" id="MoscowAndSev">
+            <p id="mapText">Доставка по <span style="color: #EF6C00;">всей России</span></p>
+            <button class="crossbuttonLocation" onclick="closeLocation()">&#9587</button>
+            <div class="MapContainer">
+                <div class="MoscowMapContainer">
+                    <p id="MoscowText1">Москва</p>
+                    <div class="MoscowMap">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A310ae57af30a00549fde2fd5e1d8d7098d4a08a4eddb738e9e52009ac1589c87&amp;width=450&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <p id="MoscowText2">г.Москва, Северянинский проезд, домовладение 11, стр.1, кор. 15</p>
+                </div>
+                <div class="SevMapContainer">
+                    <p id="SevText1">Севастополь</p>
+                    <div class="SevMap">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55689ad17bc1408d7d9f1aaa4fdcbbc98f9b133e266bbcfad8a048cd9c19b4ff&amp;width=450&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <p id="SevText2">г.Севостополь, Отрадная улица, дом 19</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <p id="newsText">Последние <span style="color: #EF6C00;">новости и события </span> нашей компании</p>
+        <div class="newsContainer">
+            <div class="firstnewsContainer">
+                <div class="firstItem">
+                    <div class="bigitem">
+                        <div class="slideNews">
+                            <div class="itemslide"></div>
+                            <div class="itemslideBox"><img src="images/arrow.svg"></div>
+                        </div>
+                        <img src="images/bigplasticformwork.png">
+                    </div>
+                </div>
+                <div class="secontItem">
+                    <div class="item">
+                        <div class="slideNewsSecond">
+                            <div class="itemslideSecond"></div>
+                            <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                        </div>
+                        <img src="images/smallplasticformwork.png">
+                    </div>
+                    <div class="item">
+                        <div class="slideNewsSecond">
+                            <div class="itemslideSecond"></div>
+                            <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                        </div>
+                        <img src="images/smallplasticformwork.png">
+                    </div>
+                    <div class="item">
+                        <div class="slideNewsSecond">
+                            <div class="itemslideSecond"></div>
+                            <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                        </div>
+                        <img src="images/smallplasticformwork.png">
+                    </div>
+                    <div class="item">
+                        <div class="slideNewsSecond">
+                            <div class="itemslideSecond"></div>
+                            <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                        </div>
+                        <img src="images/smallplasticformwork.png">
+                    </div>
+                </div>
+            </div>
+            <div class="secondnewsContainer">
+                <div class="item">
+                    <div class="slideNewsSecond">
+                        <div class="itemslideSecond"></div>
+                        <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                    </div>
+                    <img src="images/smallplasticformwork.png">
+                </div>
+                <div class="item">
+                    <div class="slideNewsSecond">
+                        <div class="itemslideSecond"></div>
+                        <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                    </div>
+                    <img src="images/smallplasticformwork.png">
+                </div>
+                <div class="item">
+                    <div class="slideNewsSecond">
+                        <div class="itemslideSecond"></div>
+                        <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                    </div>
+                    <img src="images/smallplasticformwork.png">
+                </div>
+                <div class="item">
+                    <div class="slideNewsSecond">
+                        <div class="itemslideSecond"></div>
+                        <div class="itemslideBoxSecond"><img src="images/arrow.svg"></div>
+                    </div>
+                    <img src="images/smallplasticformwork.png">
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -610,6 +711,7 @@
 
     <script src="index.js"></script>
     <script src="search.js"></script>
+
     <script type="text/javascript">      
         window.addEventListener("scroll", function(){
             var navbar = document.querySelector("#XMLID_64_",);
@@ -638,6 +740,7 @@
             var header24 = document.querySelector(".btn-19",);
             var header25 = document.querySelector("svg",);
             var header26 = document.querySelector("header",);
+            var header27 = document.querySelector(".btn-22",);
             navbar.classList.toggle("shape7", window.scrollY > 0);
             navbar1.classList.toggle("shape8", window.scrollY > 0);
             navbar2.classList.toggle("shape6", window.scrollY > 0);
@@ -664,8 +767,10 @@
             header24.classList.toggle("button4", window.scrollY > 0);
             header25.classList.toggle("svg", window.scrollY > 0);
             header26.classList.toggle("sticky", window.scrollY > 0);
+            header27.classList.toggle("button5", window.scrollY > 0);
         })
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
         const TOKEN = "5416972799:AAGqLs-ooNy8WY5-c2B-3BoX1jY__Oj7YmM";
@@ -712,10 +817,12 @@
             })
         });
     </script>
+
     <script src="request.js"></script>
     <script src="openrequest.js"></script>
     <script src="sent.js"></script>
     <script src="closesent.js"></script>
     <script src="sents.js"></script>
+    <script src="openlocation.js"></script>
 </body>
 </html>
