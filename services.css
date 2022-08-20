@@ -161,6 +161,31 @@ header.sticky {
   text-decoration: none;
 }
 
+.btn-22 {
+  border: none;
+}
+
+.btn-22:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #F9A825;
+  transition: all 0.3s ease;
+}
+
+.btn-22:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.btn-22:active {
+  top: 2px;
+}
+
 .btn-16:after {
   position: absolute;
   content: "";
@@ -210,23 +235,27 @@ header.sticky {
 }
 
 .btn-15.button {
-  color: rgb(130, 130, 130);;
+  color: rgb(130, 130, 130);
 }
 
 .btn-16.button1 {
-  color: rgb(130, 130, 130);;
+  color: rgb(130, 130, 130);
 }
 
 .btn-17.button2 {
-  color: rgb(130, 130, 130);;
+  color: rgb(130, 130, 130);
 }
 
 .btn-18.button3 {
-  color: rgb(130, 130, 130);;
+  color: rgb(130, 130, 130);
 }
 
 .btn-19.button4 {
-  color: rgb(130, 130, 130);;
+  color: rgb(130, 130, 130);
+}
+
+.btn-22.button5 {
+  color: rgb(130, 130, 130);
 }
 
 .btn-15.button:after {
@@ -249,13 +278,16 @@ header.sticky {
   background: rgb(225, 225, 225);
 }
 
+.btn-22.button5:after {
+  background: rgb(225, 225, 225);
+}
+
 .btn-16:hover:after {
   left: 0;
   width: 100%;
 }
 
 .btn-16:active {
-  top: 2px;
 }
 
 .btn-17:hover:after {
@@ -304,7 +336,7 @@ header.sticky {
     position: absolute;
     width: 90%;
     height: 1px;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     margin-left: 5%;
 }
 
@@ -432,12 +464,12 @@ nav .desktop-nav li a:hover {
   height: 44px;
   z-index: 300;
   position: absolute;
-  right: 13%;
+  right: 12%;
   top: 70px;
 }
 
 .nav-container nav {
-  width: 500px;
+  width: 800px;
   height: 100%;
 }
 
@@ -462,14 +494,25 @@ nav .desktop-nav li a:hover {
   display: block;
   background-position: center;
   background-size: 18px;
+  background-color: transparent;
   height: 50px;
   width: 50px;
   background-repeat: no-repeat;
   transition: .3s;
 }
 
+.link-search:hover {
+  background-color: #F9A825;
+  transition: .3s;
+}
+
 .link-search.black {
   background-color: #F9A825;
+  transition: .3s;
+}
+
+.link-search.black:hover {
+  background-color: rgb(130, 130, 130);
   transition: .3s;
 }
 
@@ -484,20 +527,8 @@ nav .desktop-nav li a:hover {
   transition: .3s;
 }
 
-.link-bag {
-  background: url('images/bag-icon.svg');
-  display: block;
-  background-position: center;
-  background-size: 17px;
-  height: 50px;
-  width: 50px;
-  background-color: rgb(42, 42, 42);
-  background-repeat: no-repeat;
-  transition: .6s;
-}
-
-#bag {
-  transition: .6s;
+.linksearch:hover {
+  transition: .3s;
 }
 
 .link-close {
@@ -2945,25 +2976,25 @@ label.field.focused .psuedo_select ul {
 
 #requestion {
   top: 0;
-  left: 0;
-  position: absolute;
+  position: fixed ;
   width: 100%;
   height: 100vh;
-  z-index: 1000000000000;
-  background: #1b1b1bca;
-  display: none;
-  padding-top: 60px;
-  justify-content: center;
+  z-index: -111;
+  background: transparent;
   overflow: auto;
+  transition: 1s;
+  margin: 0 auto;
 }
 
 .requestionitself {
   width: 600px;
-  height: 90%;
-  z-index: 1000;
+  padding-top: 1px;
+  height: 85%;
+  z-index: -100;
+  margin: 60px auto;
   background: white;
+  transform: scale(0);
 }
-
 
 .overviewreq {
   display: flex;
@@ -3364,8 +3395,8 @@ label.field.focused .psuedo_select ul {
   position: absolute;
   background: transparent;
   border: none;
-  top: 80px;
-  margin-left: 560px;
+  top: 10px;
+  margin-left: 570px;
   cursor: pointer;
 }
 
@@ -3581,6 +3612,7 @@ label.field.focused .psuedo_select ul {
   width: 60px;
   height: 60px;
   transition: .6s;
+  margin-top: 10px;
 }
 
 #XMLID_52_ {
@@ -3691,7 +3723,7 @@ label.field.focused .psuedo_select ul {
   position: fixed;
   z-index: 10000;
   right: 0;
-  top: 45%;
+  top: 87.5%;
   cursor: pointer;
   -webkit-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
@@ -3704,9 +3736,9 @@ label.field.focused .psuedo_select ul {
 }
 
 .phonecall {
-  background: #F9A825;
- color: #fff;
- z-index: 1;
+  background: rgb(138, 228, 4);
+  color: #fff;
+  z-index: 1;
 }
 
 .phonecall:after {

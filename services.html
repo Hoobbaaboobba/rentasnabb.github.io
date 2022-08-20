@@ -98,27 +98,30 @@
                                 <a href="services.html" id="buttonservice1"><button class="custom-btn btn-15">Услуги</button></a>
                             </li>
                             <li>
-                                <a href="#" id="buttonservice2"><button class="custom-btn btn-16">Связь</button></a>
+                                <a href="#" id="buttonservice2"><button class="custom-btn btn-16" style="width: 120px;">Новости</button></a>
                             </li>
                             <li>
-                                <a href="#" id="buttonservice3"><button class="custom-btn btn-17" style="padding-left: 15px;">Новости</button></a>
+                                <a href="#" id="buttonservice3"><button class="custom-btn btn-17" style="padding-left: 20px; width: 110px;">Отзывы</button></a>
                             </li>
                             <li>
-                                <a href="#" id="buttonservice4"><button class="custom-btn btn-18" style="padding-left: 15px;">Отзывы</button></a>
+                                <a href="#" id="buttonservice4"><button class="custom-btn btn-18" style="padding-left: 20px; width: 160px;">О компании</button></a>
                             </li>
                             <li>
-                                <a href="#requestion" id="buttonservice5"><button class="custom-btn btn-19" onclick="openRequest()" id="request" style="width: 200px;">Заказать звонок</button></a>
+                                <a href="#" id="buttonservice6"><button class="custom-btn btn-22" style="padding-left: 20px; width: 210px;">Доставка и оплата</button></a>
                             </li>
                             <li>
-                                <a href="#" class="link-search"></a>
+                                <a href="#requestion" id="buttonservice5"><button class="custom-btn btn-19" onclick="openRequest()" id="request" style="width: 190px; padding-left: 23px;">Заказать звонок</button></a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-search" id="search"></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-        <a href="#requestion">
-            <div class="phonecall"  onclick="openRequest()">
+        <a href="#requestion" onclick="openRequest()">
+            <div class="phonecall">
                 <img src="images/phone-call-svgrepo-com.svg" alt="">
             </div>
         </a>
@@ -1122,62 +1125,111 @@ f: {
 window.onload = form.f.init.register
     </script>
 
-<script type="text/javascript">      
-    window.addEventListener("scroll", function(){
-        var navbar = document.querySelector("#XMLID_64_",);
-        var navbar1 = document.querySelector("#XMLID_34_",);
-        var navbar2 = document.querySelector("#XMLID_31_",);
-        var navbar3 = document.querySelector("#XMLID_30_",);
-        var navbar4 = document.querySelector("#XMLID_47_",);
-        var navbar5 = document.querySelector("#XMLID_53_",);
-        var navbar6 = document.querySelector("#Combined-Shape-Copy",);
-        var navbar7 = document.querySelector("#XMLID_52_",);
-        var navbar8 = document.querySelector("#XMLID_76_",);
-        var navbar10 = document.querySelector(".link-search",);
-        var navbar11 = document.querySelector("#buttonservice5",);
-        var navbar12 = document.querySelector("#buttonservice4",);
-        var navbar13 = document.querySelector("#buttonservice3",);
-        var navbar14 = document.querySelector("#buttonservice2",);
-        var navbar15 = document.querySelector("#buttonservice1",);
-        var header16 = document.querySelector("header",);
-        var header17 = document.querySelector(".search-container",);
-        var header18 = document.querySelector("#Combined-Shape_4_",);
-        var header19 = document.querySelector("#XMLID_74_",);
-        var header20 = document.querySelector(".btn-15",);
-        var header21 = document.querySelector(".btn-16",);
-        var header22 = document.querySelector(".btn-17",);
-        var header23 = document.querySelector(".btn-18",);
-        var header24 = document.querySelector(".btn-19",);
-        var header25 = document.querySelector("svg",);
-        var header26 = document.querySelector("header",);
-        navbar.classList.toggle("shape7", window.scrollY > 0);
-        navbar1.classList.toggle("shape8", window.scrollY > 0);
-        navbar2.classList.toggle("shape6", window.scrollY > 0);
-        navbar3.classList.toggle("shape5", window.scrollY > 0);
-        navbar4.classList.toggle("shape4", window.scrollY > 0);
-        navbar5.classList.toggle("shape3", window.scrollY > 0);
-        navbar6.classList.toggle("shape2", window.scrollY > 0);
-        navbar7.classList.toggle("shape1", window.scrollY > 0);
-        navbar8.classList.toggle("shape", window.scrollY > 0);  
-        navbar10.classList.toggle("black", window.scrollY > 0);
-        navbar11.classList.toggle("color5", window.scrollY > 0);
-        navbar12.classList.toggle("color4", window.scrollY > 0);
-        navbar13.classList.toggle("color3", window.scrollY > 0);
-        navbar14.classList.toggle("color2", window.scrollY > 0);
-        navbar15.classList.toggle("color1", window.scrollY > 0);
-        header16.classList.toggle("sticky", window.scrollY > 0);
-        header17.classList.toggle("search", window.scrollY > 0);
-        header18.classList.toggle("shape9", window.scrollY > 0);
-        header19.classList.toggle("shape10", window.scrollY > 0);
-        header20.classList.toggle("button", window.scrollY > 0);
-        header21.classList.toggle("button1", window.scrollY > 0);
-        header22.classList.toggle("button2", window.scrollY > 0);
-        header23.classList.toggle("button3", window.scrollY > 0);
-        header24.classList.toggle("button4", window.scrollY > 0);
-        header25.classList.toggle("svg", window.scrollY > 0);
-        header26.classList.toggle("sticky", window.scrollY > 0);
-    })
-</script>
+    <script type="text/javascript">      
+        window.addEventListener("scroll", function(){
+            var navbar = document.querySelector("#XMLID_64_",);
+            var navbar1 = document.querySelector("#XMLID_34_",);
+            var navbar2 = document.querySelector("#XMLID_31_",);
+            var navbar3 = document.querySelector("#XMLID_30_",);
+            var navbar4 = document.querySelector("#XMLID_47_",);
+            var navbar5 = document.querySelector("#XMLID_53_",);
+            var navbar6 = document.querySelector("#Combined-Shape-Copy",);
+            var navbar7 = document.querySelector("#XMLID_52_",);
+            var navbar8 = document.querySelector("#XMLID_76_",);
+            var navbar10 = document.querySelector(".link-search",);
+            var navbar11 = document.querySelector("#buttonservice5",);
+            var navbar12 = document.querySelector("#buttonservice4",);
+            var navbar13 = document.querySelector("#buttonservice3",);
+            var navbar14 = document.querySelector("#buttonservice2",);
+            var navbar15 = document.querySelector("#buttonservice1",);
+            var header16 = document.querySelector("header",);
+            var header17 = document.querySelector(".search-container",);
+            var header18 = document.querySelector("#Combined-Shape_4_",);
+            var header19 = document.querySelector("#XMLID_74_",);
+            var header20 = document.querySelector(".btn-15",);
+            var header21 = document.querySelector(".btn-16",);
+            var header22 = document.querySelector(".btn-17",);
+            var header23 = document.querySelector(".btn-18",);
+            var header24 = document.querySelector(".btn-19",);
+            var header25 = document.querySelector("svg",);
+            var header26 = document.querySelector("header",);
+            var header27 = document.querySelector(".btn-22",);
+            navbar.classList.toggle("shape7", window.scrollY > 0);
+            navbar1.classList.toggle("shape8", window.scrollY > 0);
+            navbar2.classList.toggle("shape6", window.scrollY > 0);
+            navbar3.classList.toggle("shape5", window.scrollY > 0);
+            navbar4.classList.toggle("shape4", window.scrollY > 0);
+            navbar5.classList.toggle("shape3", window.scrollY > 0);
+            navbar6.classList.toggle("shape2", window.scrollY > 0);
+            navbar7.classList.toggle("shape1", window.scrollY > 0);
+            navbar8.classList.toggle("shape", window.scrollY > 0);  
+            navbar10.classList.toggle("black", window.scrollY > 0);
+            navbar11.classList.toggle("color5", window.scrollY > 0);
+            navbar12.classList.toggle("color4", window.scrollY > 0);
+            navbar13.classList.toggle("color3", window.scrollY > 0);
+            navbar14.classList.toggle("color2", window.scrollY > 0);
+            navbar15.classList.toggle("color1", window.scrollY > 0);
+            header16.classList.toggle("sticky", window.scrollY > 0);
+            header17.classList.toggle("search", window.scrollY > 0);
+            header18.classList.toggle("shape9", window.scrollY > 0);
+            header19.classList.toggle("shape10", window.scrollY > 0);
+            header20.classList.toggle("button", window.scrollY > 0);
+            header21.classList.toggle("button1", window.scrollY > 0);
+            header22.classList.toggle("button2", window.scrollY > 0);
+            header23.classList.toggle("button3", window.scrollY > 0);
+            header24.classList.toggle("button4", window.scrollY > 0);
+            header25.classList.toggle("svg", window.scrollY > 0);
+            header26.classList.toggle("sticky", window.scrollY > 0);
+            header27.classList.toggle("button5", window.scrollY > 0);
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const TOKEN = "5416972799:AAGqLs-ooNy8WY5-c2B-3BoX1jY__Oj7YmM";
+        const CHAT_ID = "-1001658879910";
+        const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+        document.getElementById('tg').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let message = `<b>Заявка с сайта!</b>\n`;
+            message += `<b>Отправитель: </b> ${ this.name.value}\n`;
+            message += `<b>Телефон: </b> ${ this.phone.value}\n`;
+            message += `<b>Почта: </b> ${ this.post.value}\n`;
+            message += `<b>Сообщение: </b> ${ this.msg.value}\n`;
+
+
+
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            })
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    
+    <script>
+        const TOKENS = "5416972799:AAGqLs-ooNy8WY5-c2B-3BoX1jY__Oj7YmM";
+        const CHAT_IDS = "-1001658879910";
+        const URI_APIS = `https://api.telegram.org/bot${TOKENS}/sendMessage`;
+
+        document.getElementById('tg1').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let messages = `<b>Заказ на звонок!</b>\n`;
+            messages += `<b>Отправитель: </b> ${ this.names.value}\n`;
+            messages += `<b>Телефон: </b> ${ this.phones.value}\n`;
+
+
+
+            axios.post(URI_APIS, {
+                chat_id: CHAT_IDS,
+                parse_mode: 'html',
+                text: messages
+            })
+        });
+    </script>
 
     <script src="loadmore.js"></script>
 
