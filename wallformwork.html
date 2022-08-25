@@ -371,6 +371,7 @@
                             <p id="submittext2">Ваша заявка успешно отправлена</p>
                         </div>
                         <p id="submittext3">Ваша заявка уже отправлена</p>
+                        <p id="submittext33">*Если хотите отпарвить заявку повторно, обновите страницу</p>
                     </form>
                 </div>
                 <div class="contentreq" id="contentreq2">
@@ -410,6 +411,7 @@
                             <p id="submittext5">Ваша заявка успешно отправлена</p>
                         </div>
                         <p id="submittext6">Ваша заявка уже отправлена</p>
+                        <p id="submittext66">*Если хотите отпарвить заявку повторно, обновите страницу</p>
                     </form>
                 </div>
             </div>
@@ -554,7 +556,7 @@
                     <p><a href="">г. Москва, Северянинский проезд,
                         вл. 11, стр. 1</a></p>
                     <p><a href="">г. Севастополь, Отрадная улица, дом 19</a></p> 
-                    <p style="height: 0px;"><a href="">+7 (978) 605-42-14</a></p>
+                    <p style="height: 0px; margin-top: 20px;"><a href="">+7 (978) 605-42-14</a></p>
                     <br>
                     <p><a href="" id="posts">info@rentasnab.ru</a></p>
                     <p><a href="" id="telegram">Написать в телеграм</a></p>
@@ -615,6 +617,52 @@
     
     <script src="overview.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const TOKEN = "5416972799:AAGqLs-ooNy8WY5-c2B-3BoX1jY__Oj7YmM";
+        const CHAT_ID = "-1001658879910";
+        const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+        document.getElementById('tg').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let message = `<b>Заявка с сайта!</b>\n`;
+            message += `<b>Отправитель: </b> ${ this.name.value}\n`;
+            message += `<b>Телефон: </b> ${ this.phone.value}\n`;
+            message += `<b>Почта: </b> ${ this.post.value}\n`;
+            message += `<b>Сообщение: </b> ${ this.msg.value}\n`;
+
+
+
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            })
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    
+    <script>
+        const TOKENS = "5416972799:AAGqLs-ooNy8WY5-c2B-3BoX1jY__Oj7YmM";
+        const CHAT_IDS = "-1001658879910";
+        const URI_APIS = `https://api.telegram.org/bot${TOKENS}/sendMessage`;
+
+        document.getElementById('tg1').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let messages = `<b>Заказ на звонок!</b>\n`;
+            messages += `<b>Отправитель: </b> ${ this.names.value}\n`;
+            messages += `<b>Телефон: </b> ${ this.phones.value}\n`;
+
+
+
+            axios.post(URI_APIS, {
+                chat_id: CHAT_IDS,
+                parse_mode: 'html',
+                text: messages
+            })
+        });
+    </script>
 
     <script type="text/javascript">      
         window.addEventListener("scroll", function(){

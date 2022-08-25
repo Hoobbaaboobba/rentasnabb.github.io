@@ -1790,7 +1790,7 @@ a {
 .requestionitself {
     width: 600px;
     padding-top: 1px;
-    height: 85%;
+    height: 800px;
     z-index: -100;
     margin: 60px auto;
     background: white;
@@ -2130,7 +2130,7 @@ a {
     border: 1px solid black;
     background: transparent;
     position: absolute;
-    bottom: 193px;
+    bottom: 90px;
     display: none;
     font-size: 20px;
     width: 250px;
@@ -2141,7 +2141,7 @@ a {
     border: 1px solid black;
     background: transparent;
     position: absolute;
-    top: 420px;
+    top: 360px;
     display: none;
     font-size: 20px;
     width: 250px;
@@ -2338,6 +2338,16 @@ a {
     margin-left: 185px;
     margin-top: 80px;
 }
+
+#submittext33 {
+    display: none;
+    color: rgb(130, 130, 130);
+    font-size: 16px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 110px;
+}
+
 #submittext4 {
     color: red;
     font-size: 18px;
@@ -2359,6 +2369,15 @@ a {
     position: absolute;
     margin-left: 185px;
     margin-top: 90px;
+}
+
+#submittext66 {
+    color: rgb(130, 130, 130);
+    display: none;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 120px;
 }
 
 @keyframes buttons {

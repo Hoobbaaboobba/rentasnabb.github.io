@@ -7,8 +7,10 @@ var btndable = document.getElementById("submot");
 var btndisables = document.getElementById("submot3");
 var btndables = document.getElementById("submot2");
 var sent = document.getElementById("submittext3")
+var sent3 = document.getElementById("submittext33")
 var success = document.getElementById('submittext2');
 var sents = document.getElementById("submittext6")
+var sents2 = document.getElementById("submittext66")
 var successs = document.getElementById('submittext5');
 
 function closesentRequest() {
@@ -17,6 +19,7 @@ function closesentRequest() {
     btndisable.style.display = "block";
     btndable.style.display = "none";
     sent.style.display = "block";
+    sent3.style.display = "block";
     success.style.display = "none";
 }
 
@@ -26,5 +29,6 @@ function closesentRequests() {
     btndisables.style.display = "none";
     btndables.style.display = "block";
     sents.style.display = "block";
+    sents2.style.display = "block";
     successs.style.display = "none";
 }

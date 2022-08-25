@@ -1405,7 +1405,7 @@ a {
     position: absolute;
     height: 10px;
     width: 70%;
-    background: #F9A825;
+    background: #EF6C00;
     margin-left: 15%;
     margin-top: 31px;
 }
@@ -3329,7 +3329,7 @@ label.field.focused .psuedo_select ul {
   border: 1px solid black;
   background: transparent;
   position: absolute;
-  bottom: 193px;
+  bottom: 110px;
   display: none;
   font-size: 20px;
   width: 250px;
@@ -3340,7 +3340,7 @@ label.field.focused .psuedo_select ul {
   border: 1px solid black;
   background: transparent;
   position: absolute;
-  top: 420px;
+  top: 360px;
   display: none;
   font-size: 20px;
   width: 250px;
@@ -3537,6 +3537,16 @@ label.field.focused .psuedo_select ul {
   margin-left: 185px;
   margin-top: 80px;
 }
+
+#submittext33 {
+  display: none;
+  color: rgb(130, 130, 130);
+  font-size: 16px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 110px;
+}
+
 #submittext4 {
   color: red;
   font-size: 18px;
@@ -3558,6 +3568,15 @@ label.field.focused .psuedo_select ul {
   position: absolute;
   margin-left: 185px;
   margin-top: 90px;
+}
+
+#submittext66 {
+  color: rgb(130, 130, 130);
+  display: none;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 120px;
 }
 
 @keyframes buttons {

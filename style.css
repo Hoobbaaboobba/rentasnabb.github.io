@@ -141,6 +141,118 @@ header.sticky {
     margin-left: 5%;
 }
 
+#logo:hover #Combined-Shape {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Rectangle-8 {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Group-3 {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Rectangle-13 {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Triangle {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Combined-Shape_1_ {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Combined-Shape_2_ {
+    opacity: 0;
+    transition: .3s;
+}
+
+#logo:hover #Combined-Shape_3_ {
+    opacity: 0;
+    transition: .3s;
+}
+
+#Combined-Shape {
+    transition: .3s;
+}
+
+#Combined-Shape_1_ {
+    transition: .3s;
+}
+
+#Rectangle-8 {
+    transition: .3s;
+}
+
+#Group-3 {
+    transition: .3s;
+}
+
+#Rectangle-13 {
+    transition: .3s;
+}
+
+#Triangle {
+    transition: .3s;
+}
+
+#Combined-Shape_2_ {
+    transition: .3s;
+}
+
+#Combined-Shape_3_  {
+    transition: .3s;
+}
+
+svg.svg:hover #Combined-Shape {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Rectangle-8 {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Group-3 {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Rectangle-13 {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Triangle {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Combined-Shape_1_ {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Combined-Shape_2_ {
+    opacity: 0;
+    transition: .3s;
+}
+
+svg.svg:hover #Combined-Shape_3_ {
+    opacity: 0;
+    transition: .3s;
+}
+
 .top_down_nav ul {
     position: absolute;
     display: flex;
@@ -306,8 +418,15 @@ header.sticky {
 .information {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 60%;
+    width: 1400px;
+    height: 120px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
     margin: 320px auto 0;
+    -webkit-box-shadow: 0px 0px 24px 7px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 24px 7px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 24px 7px rgba(34, 60, 80, 0.2);
     justify-content: center;
     gap: 40px;  
 }
@@ -617,38 +736,38 @@ header.sticky {
 .btn-16:hover:after {
     left: 0;
     width: 100%;
- }
+}
  
- .btn-16:active {
+.btn-16:active {
     top: 2px;
- }
+}
 
- .btn-17:hover:after {
+.btn-17:hover:after {
     left: 0;
     width: 100%;
- }
+}
  
- .btn-17:active {
+.btn-17:active {
     top: 2px;
- }
+}
 
- .btn-18:hover:after {
+.btn-18:hover:after {
     left: 0;
     width: 100%;
- }
+}
  
- .btn-18:active {
+.btn-18:active {
     top: 2px;
- }
+}
 
- .btn-19:hover:after {
+.btn-19:hover:after {
     left: 0;
     width: 100%;
- }
+}
  
- .btn-19:active {
+.btn-19:active {
     top: 2px;
- }
+}
   
 .btn-15:hover:after {
    left: 0;
@@ -673,7 +792,6 @@ header.sticky {
     position: relative;
     display: inline-block;
 }
-
 
 .btn-14 {
     position: absolute;
@@ -2228,7 +2346,7 @@ svg.svg {
     border: 1px solid black;
     background: transparent;
     position: absolute;
-    bottom: 193px;
+    bottom: 90px;
     display: none;
     font-size: 20px;
     width: 250px;
@@ -2239,7 +2357,7 @@ svg.svg {
     border: 1px solid black;
     background: transparent;
     position: absolute;
-    top: 420px;
+    top: 360px;
     display: none;
     font-size: 20px;
     width: 250px;
@@ -2685,6 +2803,16 @@ svg.svg {
     margin-left: 185px;
     margin-top: 80px;
 }
+
+#submittext33 {
+    display: none;
+    color: rgb(130, 130, 130);
+    font-size: 16px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 110px;
+}
+
 #submittext4 {
     color: red;
     font-size: 18px;
@@ -2706,6 +2834,15 @@ svg.svg {
     position: absolute;
     margin-left: 185px;
     margin-top: 90px;
+}
+
+#submittext66 {
+    color: rgb(130, 130, 130);
+    display: none;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 120px;
 }
 
 @keyframes buttons {
@@ -2973,7 +3110,7 @@ svg.svg {
 .news {
     display: flex;
     margin-top: 100px;
-    height: 1100px;
+    height: 800px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -2986,7 +3123,7 @@ svg.svg {
     margin-top: 350px;
     width: 0px;
     transition: .4s;
-    z-index: 100;
+    z-index: 10;
 }
 
 .itemslide {
@@ -3008,7 +3145,7 @@ svg.svg {
 .secontItem {
     display: grid;
     grid-template-columns: repeat(2, 325px);
-    gap: 13px;
+    gap: 20px;
 }
 
 .firstnewsContainer {
@@ -3064,6 +3201,7 @@ svg.svg {
     cursor: pointer;
     overflow: hidden;
     transition: .3s;
+    z-index: 10;
 }
 
 .item:hover .slideNewsSecond {

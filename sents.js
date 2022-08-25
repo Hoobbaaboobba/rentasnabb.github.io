@@ -17,11 +17,17 @@ function sentRequests() {
         setTimeout(() => {
             names.value = '';
             phones.value = '';
+            checkbox2.checked = false;
         }, 2000);
 
         successs.style.display = 'block';
         dangers.style.display = 'none';
-        request.style.display = 'none';
+        request.style.background = "transparent";
+        request.style.zIndex = "-111";
+        request.style.transition = "0s";
+        requestion.style.transform = "scale(0)";
+        requestion.style.zIndex = "-100";
+        requestion.style.transition = "0s";
         marks.style.display = 'flex';
 
     }
