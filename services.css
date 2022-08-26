@@ -3401,7 +3401,7 @@ label.field.focused .psuedo_select ul {
 }
 
 #sent {
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   top: 0px;
   display: none;

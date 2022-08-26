@@ -999,7 +999,7 @@ nav .desktop-nav li a:hover {
 .backText {
     position: absolute;
     top: 180px;
-    left: 290px;
+    left: 20%;
     font-weight: 700;
 }
 
@@ -1441,7 +1441,7 @@ nav .desktop-nav li a:hover {
 }
 
 #sent {
-    position: absolute;
+    position: fixed;
     z-index: 10000;
     top: 0px;
     display: none;
@@ -1635,7 +1635,6 @@ nav .desktop-nav li a:hover {
     width: 100%;
     height: 500px;
     background: black;
-    margin-top: 50px;
   }
   
   .footer-container {
@@ -1955,7 +1954,6 @@ nav .desktop-nav li a:hover {
 .aboutCenter {
     display: flex;
     margin-top: 60px;
-    margin-right: 10px;
     background: rgb(240, 240, 240);
     height: 700px;
     width: 100.5%;
@@ -1979,7 +1977,6 @@ nav .desktop-nav li a:hover {
 
 #popupimage{
     top: 0;
-    left: 0;
     background: transparent;
     width: 100%;
     height: 100%;
@@ -1987,21 +1984,24 @@ nav .desktop-nav li a:hover {
     z-index: 10000;
     transition: .3s;
     z-index: -111;
+    padding: 0 auto;
+}
+
+.aboutUsImage {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    margin: 100px auto;
 }
 
 #imageabout2 {
     position: absolute;
-    width: 70%;
-    height: 70%;
-    left: 15%;
-    top: 150px;
+    width: 1200px;
+    height: 700px;
     transition: .3s;
-}
-
-#imageabout2 {
     transform: scale(0);
 }
- 
+
 .imageAnim {
     width: 900px;
     height: 500px;
@@ -2031,7 +2031,6 @@ nav .desktop-nav li a:hover {
     padding-top: 8px;
     padding-left: 28px;
     margin-top: 420px;
-
 }
 
 .howWeWork li {
@@ -2355,4 +2354,154 @@ nav .desktop-nav li a:hover {
 .phonecall:hover:after {
    left: 0;
    width: 100%;
+}
+
+.opinionContainer {
+    margin-top: 100px;
+    height: 500px;
+    background: rgb(229, 229, 229);
+}
+
+.opiniontext {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.rbd-core-ui {
+    padding-top: 140px;
+}
+
+.rbd-review-slider .rbd-preloader {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+  }
+  
+  .rbd-review-slider .rbd-review.rbd-prev {
+    transform: translate3d(-100px, 0, -50px);
+    display: inline-block;
+  }
+  
+  .rbd-review-slider .rbd-review.rbd-next {
+    transform: translate3d(100px, 0, -50px);
+    display: inline-block;
+  }
+  
+  .rbd-review-slider .rbd-review.rbd-curr {
+    z-index: 10;
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+    display: inline-block;
+  }
+  
+  .rbd-review-slider .rbd-review {
+    padding: 20px 30px;
+    font-size: 18px;
+    line-height: 1.612;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.5);
+    display: none;
+    vertical-align: top;
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0;
+    background: #fff;
+    max-width: 600px;
+  }
+  
+  .rbd-review-slider .rbd-review.rbd-first {
+    display: block;
+  }
+  
+  .rbd-review-slider .rbd-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .rbd-review-slider svg {
+    fill: #ffbb58;
+    width: 24px;
+    margin-right: 1px;
+  }
+  
+  .rbd-review-slider .rbd-review-meta {
+    font-size: 12px;
+    color: #565656;
+    margin-top: 12px;
+    text-align: center;
+  }
+  
+  .rbd-review-slider .rbd-gravatar {
+    border-radius: 100%;
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    border: 6px solid transparent;
+    box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.35);
+  }
+  
+  .rbd-footing {
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  
+  @keyframes round {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+  }
+
+#splideimage1 {
+    opacity: 0;
+    animation: image 6s ease-in forwards;
+}
+
+#splideimage2 {
+    opacity: 0;
+    animation: image 6s 1s ease-in forwards;
+}
+
+#splideimage3 {
+    opacity: 0;
+    animation: image 6s 2s ease-in forwards;
+}
+
+#splideimage4 {
+    opacity: 0;
+    animation: image 6s 3s ease-in forwards;
+}
+
+#splideimage5 {
+    opacity: 0;
+    animation: image 6s 4s ease-in forwards;
+}
+
+#splideimage6 {
+    opacity: 1;
+    animation: image 6s 5s ease-in forwards;
+}
+
+@keyframes image {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
