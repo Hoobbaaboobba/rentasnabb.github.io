@@ -1117,7 +1117,7 @@ a {
     width: 100%;
     height: 850px;
     background: #eeeeee;
-    margin-top: 280px;
+    margin-top: 150px;
 }
 
 .textbottom h1 {
@@ -1505,6 +1505,14 @@ a {
 }
 
 #contentcont2 {
+    display: none;
+    width: 70%;
+    background: white;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+#contentcont3 {
     display: none;
     width: 70%;
     background: white;
@@ -2415,7 +2423,6 @@ a {
 }
 
 .phonecall {
-    background: rgb(138, 228, 4);
    color: #fff;
    z-index: 1;
 }

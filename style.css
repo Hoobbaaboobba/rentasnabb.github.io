@@ -336,20 +336,27 @@ svg.svg:hover #Combined-Shape_3_ {
 
 .backtext {
     width: 70%;
-    opacity: 0;
     position: absolute;
     color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 220px;
+    margin-top: 180px;
     margin-left: 15%;
+}
+
+#backtext1 {
+    opacity: 0;
     animation: imageslide 1s linear forwards;
+}
+
+#backtext2 {
+    opacity: 0;
+    animation: imageslide .6s 1s linear forwards;
 }
 
 @keyframes imageslide {
     100% {
         opacity: 1;
-        margin-top: 180px;
     }
 }
 
@@ -2000,6 +2007,7 @@ svg.svg {
 
 .card h4 {
     color: white;
+    font-weight: normal;
 }
 
 .card a {
@@ -2991,7 +2999,7 @@ svg.svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: greenyellow;
+    background: #F9A825;
     position: fixed;
     z-index: 10000;
     right: 0;
@@ -3488,3 +3496,19 @@ svg.svg {
       opacity: 0;
     }
   }
+
+#opinionpoint {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    position: absolute;
+    top: 2000px;
+}
+
+#newspoint {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    position: absolute;
+    top: 1350px;
+}

@@ -101,7 +101,7 @@
                             <a href="" id="buttonservice2"><button class="custom-btn btn-16" style="width: 120px;">Новости</button></a>
                         </li>
                         <li>
-                            <a href="#" id="buttonservice3"><button class="custom-btn btn-17" style="padding-left: 23px; width: 110px;">Отзывы</button></a>
+                            <a href="#opinionContainer" id="buttonservice3"><button class="custom-btn btn-17" style="padding-left: 23px; width: 110px;">Отзывы</button></a>
                         </li>
                         <li>
                             <a href="aboutUs.html" id="buttonservice4"><button class="custom-btn btn-18" style="padding-left: 20px; width: 160px;">О компании</button></a>
@@ -138,51 +138,61 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image1.png" style="border-radius: 20px;" id="splideimage1">
                     <p>Опалубка перекрытий</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image2.png" style="border-radius: 20px;" id="splideimage2">
                     <p style="width: 100px;">Опалубка колонн</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image3.png" style="border-radius: 20px;" id="splideimage3">
                     <p>Ветрозащитные экраны</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image4.png" style="border-radius: 20px;" id="splideimage4">
                     <p>Сторительные леса</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image5.png" style="border-radius: 20px;" id="splideimage5">
                     <p>Опалубка стен</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image6.png" style="border-radius: 20px;" id="splideimage6">
                     <p>Станции обогрева бетона</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image7.png" style="border-radius: 20px;">
                     <p>Гибочные рубочные станки</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image8.png" style="border-radius: 20px;">
                     <p style="width: 120px;">Деревянная балка</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image9.png" style="border-radius: 20px;">
                     <p>Фанера</p>
                     <div class="greyScreen"></div>
                 </li>
                 <li class="splide__slide">
+                    <a href="services.html"></a>
                     <img src="images/image10.png" style="border-radius: 20px;">
                     <p>Комплектующие для опалубки</p>
                     <div class="greyScreen"></div>
@@ -436,7 +446,7 @@
         <button class="footerbotton" onclick="openRequest()">Оставить заявку</button>
     </div>
 
-    <div class="opinionContainer">
+    <div class="opinionContainer" id="opinionContainer">
         <div class="opiniontext">
             <p>Отзывы наших клиентов на <span style="color: #EF6C00;">Яндекс:</span></p>
         </div>
@@ -776,6 +786,34 @@ window.addEventListener('DOMContentLoaded', function() {
 	}, options.speed);
 }, true);
     </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
 
 
 <script src="request.js"></script>

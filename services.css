@@ -16,10 +16,6 @@ header {
     left: 0;
     transition: .6s;
     backdrop-filter: blur(4px);
-    opacity: 0.97;
-    -webkit-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
 }
 
 header.sticky {
@@ -1562,7 +1558,7 @@ a {
 .child16 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/screw.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1571,7 +1567,7 @@ a {
 .child17 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/clinlock.jpg');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1580,7 +1576,7 @@ a {
 .child18 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/longlock.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1589,7 +1585,7 @@ a {
 .child19 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/spring.jpg');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1598,7 +1594,7 @@ a {
 .child20 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/stubcina.jpg');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1607,7 +1603,7 @@ a {
 .child21 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/grid.jpg');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1617,7 +1613,7 @@ a {
 .child22 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/tent.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1626,7 +1622,7 @@ a {
 .child23 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/gamma.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1635,7 +1631,7 @@ a {
 .child24 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/laminirovanaya.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1644,7 +1640,7 @@ a {
 .child25 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/smazka.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1653,7 +1649,7 @@ a {
 .child26 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/kronshtein.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1662,7 +1658,7 @@ a {
 .child27 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/balka.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1671,7 +1667,7 @@ a {
 .child28 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/woodbalka.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1698,7 +1694,7 @@ a {
 .child31 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/stoika.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -3755,7 +3751,6 @@ label.field.focused .psuedo_select ul {
 }
 
 .phonecall {
-  background: rgb(138, 228, 4);
   color: #fff;
   z-index: 1;
 }

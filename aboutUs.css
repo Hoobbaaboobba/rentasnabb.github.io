@@ -12,7 +12,6 @@
     overflow-x: hidden;
 }
 
-
 header {
     width: 100%;
     height: 143px;
@@ -1917,6 +1916,13 @@ nav .desktop-nav li a:hover {
     z-index: 1;
 }
 
+.splide__slide a {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 100000000;
+}
+
 .splide__slide p {
     color: white;
     position: absolute;
@@ -1956,7 +1962,7 @@ nav .desktop-nav li a:hover {
     margin-top: 60px;
     background: rgb(240, 240, 240);
     height: 700px;
-    width: 100.5%;
+    width: 100%;
     justify-content: center;
     padding-top: 100px;
 }
@@ -2036,13 +2042,12 @@ nav .desktop-nav li a:hover {
 .howWeWork li {
     padding-top: 30px;
     font-size: 24px;
-    font-weight: 700;
     color: rgb(130, 130, 130);
     list-style: none;
 }
 
 .howWeWork li a {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .howWeWork #how1::before {
@@ -2313,7 +2318,7 @@ nav .desktop-nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: greenyellow;
+    background: #F9A825;
     position: fixed;
     z-index: 10000;
     right: 0;
@@ -2330,7 +2335,6 @@ nav .desktop-nav li a:hover {
 }
 
 .phonecall {
-    background: rgb(138, 228, 4);
     color: #fff;
     z-index: 1;
 }
@@ -2466,32 +2470,32 @@ nav .desktop-nav li a:hover {
 
 #splideimage1 {
     opacity: 0;
-    animation: image 6s ease-in forwards;
+    animation: image 3s ease-in forwards;
 }
 
 #splideimage2 {
     opacity: 0;
-    animation: image 6s 1s ease-in forwards;
+    animation: image 3s 0.5s ease-in forwards;
 }
 
 #splideimage3 {
     opacity: 0;
-    animation: image 6s 2s ease-in forwards;
+    animation: image 3s 1s ease-in forwards;
 }
 
 #splideimage4 {
     opacity: 0;
-    animation: image 6s 3s ease-in forwards;
+    animation: image 3s 1.5s ease-in forwards;
 }
 
 #splideimage5 {
     opacity: 0;
-    animation: image 6s 4s ease-in forwards;
+    animation: image 3s 2s ease-in forwards;
 }
 
 #splideimage6 {
     opacity: 1;
-    animation: image 6s 5s ease-in forwards;
+    animation: image 3s 2.5s ease-in forwards;
 }
 
 @keyframes image {
