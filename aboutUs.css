@@ -2509,3 +2509,10 @@ nav .desktop-nav li a:hover {
         opacity: 1;
     }
 }
+
+.kartinka {
+  background-image: url("images/BackNavbar.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}

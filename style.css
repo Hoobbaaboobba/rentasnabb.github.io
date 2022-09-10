@@ -16,6 +16,7 @@ header {
     height: 143px;
     display: flex;
     position: fixed;
+    justify-content: center;
     top: 0;
     left: 0;
     transition: 0.6s;
@@ -282,13 +283,18 @@ svg.svg:hover #Combined-Shape_3_ {
     color: white;
     display: flex;
     width: 80%;
+    max-width: 1630px;
     height: 40px;
-    margin-left: 10%;
+}
 
+.splide {
+    max-width: 1500px;
 }
 
 .mainnav {
     background: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 .contacts {
@@ -381,9 +387,9 @@ svg.svg:hover #Combined-Shape_3_ {
     display: flex;
     background: white;
     top: 430px;
-    left: 10%;
     width: 80%;
     height: 343px;
+    max-width: 1630px;
 }
 
 #project {
@@ -2462,7 +2468,8 @@ svg.svg {
 .footer-container {
   padding-top: 80px;
   margin: 0 auto;
-  width: 70%;
+  width: 1330px;
+  max-width: 1330px;
   display: flex;
 }
 
@@ -2607,7 +2614,8 @@ svg.svg {
 
 .termfooter {
   display: flex;
-  width: 70%;
+  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 30px 30px;
   background: #dadada;
@@ -2698,8 +2706,9 @@ svg.svg {
 
 .socialmedia {
   display: flex;
-  position: absolute;
-  right: 17%;
+  width: 300px;
+  float: right;
+  margin-left: 310px;
 }
 
 #sent {
@@ -2994,6 +3003,7 @@ svg.svg {
 }
 
 .phonecall {
+    background-size: cover;
     width: 60px;
     height: 60px;
     display: flex;
@@ -3016,7 +3026,6 @@ svg.svg {
 }
 
 .phonecall {
-    background: rgb(138, 228, 4);
     color: #fff;
     z-index: 1;
 }
@@ -3206,7 +3215,14 @@ svg.svg {
     margin-top: 0px;
     font-size: 36px;
     font-weight: 700;
-    margin-right: 30%;
+    width: 1350px;
+    max-width: 1350px;
+}
+
+.newText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .bigitem:hover .slideNews{
@@ -3284,6 +3300,93 @@ svg.svg {
     color: white;
 }
 
+.threeLines {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 6%;
+}
+
+.mobileNavbar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: .6s;
+    z-index: 100;
+}
+
+.mainmobileNavBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: black;
+    z-index: 100;
+}
+
+.mainMobileNav {
+    text-align: center;
+}
+
+.mainMobileNav li {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.mainMobileNav li a:hover {
+    color: #F9A825;
+    transition: .3s;
+}
+
+.mainMobileNav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.mobileWhiteLine {
+    background: white;
+    width: 90%;
+    height: 1px;
+    margin: 40px 0;
+}
+
+.mobileCross {
+    top: 20px;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    background: #F9A825;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobileContactUs li a {
+    text-decoration: none;
+}
+
+.mobileContactUs li p {
+    color: white;
+}
+
+.mainmobileNavBar svg{
+    margin-top: 40px;
+}
+
+.linkedin {
+    color: white;
+}
+
 @media (max-width: 1829px) {
     #revenue {
         padding-left: 12%;
@@ -3299,6 +3402,10 @@ svg.svg {
 @media (max-width: 1674px) {
     #clients {
         padding-left: 12%;
+
+    }
+    .nav-container {
+        right: 13%;
     }
 }
 
@@ -3326,6 +3433,8 @@ svg.svg {
 @media (max-width: 1464px) {
     .information {
         grid-template-columns: repeat(2, 1fr);
+        width: 750px;
+        height: 240px;
     }
     #revenue {
         padding-left: 9%;
@@ -3335,6 +3444,31 @@ svg.svg {
     }
     #clients {
         padding-left: 10%;
+    }
+    .footer-container {
+        padding-top: 80px;
+        margin: 0 auto;
+        width: 11
+        00px;
+        max-width: 1100px;
+        display: flex;
+    }
+    .termfooter {
+        display: flex;
+        width: 1100px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 30px 30px;
+        background: #dadada;
+    }
+    .socialmedia {
+        display: flex;
+        width: 300px;
+        float: right;
+        margin-left: 100px;
+    }    
+    .nav-container {
+        right: 14%;
     }
 }
 
@@ -3357,39 +3491,181 @@ svg.svg {
     #orangeline1 {
         height: 225px;
     }
+    .firstnewsContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        gap: 13px;
+    }
+    .news {
+        height: 1200px;
+    }
+    .newText {
+        width: 800px;
+    }
+    .nav-container {
+        right: 15%;
+    }
 }
 
-@media (max-width) {}
+@media (max-width: 1330px) {
+    #orangeline3 {
+        height: 270px;
+    }
+}
 
-@media (max-width: 1314px) {
-    #orangeline1 {
+@media (max-width: 1276px) {
+    #orangeline2 {
         height: 270px;
     }
 }
 
 @media (max-width: 1241px) {
-    #orangeline2 {
-        height: 340px;
+    .footer-container {
+        padding-top: 80px;
+        margin: 0 auto;
+        width: 900px;
+        max-width: 900px;
+        display: flex;
+    }
+    .termfooter {
+        display: flex;
+        width: 900px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px 30px;
+        background: #dadada;
+    }
+    .socialmedia {
+        display: flex;
+        width: 300px;
+        float: right;
+        margin-left: 0px;
+    }  
+    .Ultermfooter {
+        margin-left: 0;
+    }
+    .footer {
+        height: 600px;
+    }
+    .ourcontacts {
+        width: 20%;
+    }
+    #mapText {
+        margin-bottom: 0px;
+    }
+    .MoscowAndSev {
+        width: 600px;
+        height: 1100px;
+        background: white;
+        margin: 60px auto;
+        transform: scale(0);
+        transition: .6s;
+        display: flex;
+        z-index: -100;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .MapContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 300px;
+    }
+    
+    .MoscowMapContainer {
+        width: 300px;
+        height: 350px;
+        margin-right: 50px;
+    }
+    
+    .SevMapContainer {
+        width: 300px;
+        height: 350px;
+        margin-left: 50px;
+    }
+    
+    .MoscowMap {
+        width: 200px;
+        height: 250px;
+        background: grey;
+    }
+    
+    .SevMap {
+        width: 200px;
+        height: 250px;
+        background: grey;
+    }
+    
+    #MoscowText1 {
+        font-size: 30px;
+        color: #F9A825;
+        font-weight: 700;
+        margin-left: 160px;
+        margin-bottom: 10px;
+    }
+    
+    #MoscowText2 {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+    
+    #SevText1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #F9A825;
+        margin-left: 140px;
+        margin-bottom: 10px;
+    }
+    
+    #SevText2 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 90px;
+        font-weight: 700;
+    }
+    
+    .crossbuttonLocation {
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 10px;
+        margin-left: 1160px;
+        cursor: pointer;
     }
 }
 
-@media (max-width: 1209px) {
-    #orangeline1 {
-        height: 295px;
+@media (max-width: 1218px) {
+    #revenue {
+        padding-left: 8%;
+        width: 300px;
     }
-    #orangeline2 {
-        height: 360px;
+}
+
+@media (max-width: 1199px) {
+    .nav-container {
+        display: none;
+    }
+    header {
+        transform: translateY(-45px);
+    }
+    .threeLines {
+        display: block;
+    }
+    #logo {
+        margin-left: 15%;
+        color: #F9A825;   
     }
 }
 
 @media (max-width: 1189px) {
-    #orangeline3 {
-        height: 360px;
-    }
     #clients {
         padding-left: 8%;
     }
 }
+
 
 .opinionContainer {
     height: 500px;
@@ -3511,4 +3787,11 @@ svg.svg {
     background: transparent;
     position: absolute;
     top: 1350px;
+}
+
+.kartinka {
+    background-image: url("images/BackNavbar.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
 }

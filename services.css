@@ -1014,15 +1014,18 @@ a {
 
 .filter {
     width: 100%;
-    height: 160px;
+    height: 110px;
     background: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .filteryourself {
     display: flex;
-    width: 70%;
-    margin-left: 15%;
-    padding-top: 30px;
+    width: 1330px;
+    padding-top: 15px;
 }
 
 .brd {
@@ -1400,10 +1403,15 @@ a {
 .justborder {
     position: absolute;
     height: 10px;
-    width: 70%;
+    width: 1330px;
     background: #EF6C00;
-    margin-left: 15%;
-    margin-top: 31px;
+}
+
+.justborderContainers {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .store-product {
@@ -1412,6 +1420,7 @@ a {
 
 #store-products {
   width: 70%;
+  max-width: 1340px;
   height: auto;
   margin: 50px auto;
   display:grid;
@@ -1676,7 +1685,7 @@ a {
 .child29 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/treelegs.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1685,7 +1694,7 @@ a {
 .child30 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/montage.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1703,7 +1712,7 @@ a {
 .child32 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/podcos.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1712,7 +1721,7 @@ a {
 .child33 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/ferry.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1721,7 +1730,7 @@ a {
 .child34 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/gib.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1730,7 +1739,7 @@ a {
 .child35 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/rub.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -1748,7 +1757,7 @@ a {
 .child37 {
   width: 100%;
   height: 100%;
-  background: url('images/steelformwork.jpg');
+  background: url('images/tmo.png');
   background-size: cover;
   background-position: center center;
   transform: scale(1);
@@ -2543,11 +2552,15 @@ i.fa.fa-tag::before {
   margin-right: 10px;
 }
 
+.filterContainer {
+  width: 70%;
+}
+
 .field {
   border-radius: 2px;
   color: white;
   display: block;
-  margin-left: 15%;
+  width: 300px;
   max-width: 300px;
   padding: 8px;
   opacity: 0;
@@ -2564,7 +2577,7 @@ label.field span {
   left: 9px;
   pointer-events: none;
   position: absolute;
-  top: 32px;
+  top: 15px;
   transform: scale(1) translateY(0);
   transition-property: color, font-size, top;
   z-index: 1;
@@ -2594,7 +2607,7 @@ label.field .psuedo_select {
   font-size: 20px;
   height: 24px;
   line-height: 24px;
-  margin: 24px 32px 0 0;
+  margin: 20px 32px 0 0;
   min-width: 250px;
   padding-top: 24px;
   outline: 0;
@@ -3774,4 +3787,11 @@ label.field.focused .psuedo_select ul {
 .phonecall:hover:after {
  left: 0;
  width: 100%;
+}
+
+.kartinka {
+  background-image: url("images/BackNavbar.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }

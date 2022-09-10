@@ -2447,3 +2447,10 @@ a {
    left: 0;
    width: 100%;
 }
+
+.kartinka {
+  background-image: url("images/BackNavbar.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
