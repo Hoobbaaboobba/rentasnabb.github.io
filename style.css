@@ -1778,7 +1778,7 @@ svg.svg {
     top: 0;
     position: fixed ;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -111;
     background: transparent;
     overflow: auto;
@@ -2760,7 +2760,7 @@ svg.svg {
     position: fixed;
     z-index: 10000;
     right: 0;
-    top: 87.5%;
+    top: 75%;
     cursor: pointer;
     -webkit-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
@@ -2802,7 +2802,7 @@ svg.svg {
     top: 0;
     position: fixed ;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -111;
     background: transparent;
     overflow: auto;
@@ -2956,6 +2956,14 @@ svg.svg {
 
 .newsContainer {
     margin-top: 100px;
+}
+
+#out-1 {
+    font-size: 64px;
+}
+
+.countproject span {
+    font-size: 64px;
 }
 
 #newsText {
@@ -3141,6 +3149,9 @@ svg.svg {
     color: white;
 }
 
+.project p {
+    font-size: 24px;
+}
 
 @media (max-width: 1674px) {
     .nav-container {
@@ -3535,7 +3546,27 @@ svg.svg {
         font-size: 16px;
         width: 300px;
     }
+    .advantages {
+        width: 600px;
+    }
+    .buttons {
+        width: 600px;
+    }
+    #out-1 {
+        font-size: 80px;
+    }
+    .countproject span {
+        font-size: 80px;
+    }    
+    .project p {
+        font-size: 32px;
+    }
+    .rbd-core-ui {
+        padding: 100px;
+    }
     #opiniontext {
+        font-size: 30px;
+        width: 600px;
     }
 }
 
