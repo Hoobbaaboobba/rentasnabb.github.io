@@ -3056,7 +3056,7 @@ svg.svg {
 
 .mobileNavbar {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     left: 0;
     bottom: 0;
     position: fixed;
