@@ -3091,8 +3091,8 @@ svg.svg {
 }
 
 #newsImg {
-    width: 600px;
-    height: 400px;
+    width: 850px;
+    height: 520px;
 }
 
 .mainMobileNav li a {
@@ -3330,6 +3330,9 @@ svg.svg {
 }
 
 @media (max-width: 800px) {
+    #news {
+        display: none;
+    }
     .contactUs {
         display: none;
     }
