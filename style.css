@@ -3518,6 +3518,19 @@ svg.svg {
     }  
 }
 
+@media (max-width: 670px) {
+    #backtext1 {
+        font-size: 30px;
+        width: 300px;
+    }
+    #backtext2 {
+        font-size: 16px;
+        width: 300px;
+    }
+    #opiniontext {
+    }
+}
+
 
 .opinionContainer {
     height: 500px;
