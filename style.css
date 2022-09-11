@@ -2758,9 +2758,9 @@ svg.svg {
     align-items: center;
     background: #F9A825;
     position: fixed;
-    z-index: 10000;
+    z-index: 10000000101;
     right: 0;
-    top: 75%;
+    top: 70vh;
     cursor: pointer;
     -webkit-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 9px 15px 0px rgba(34, 60, 80, 0.2);
@@ -3364,13 +3364,13 @@ svg.svg {
     }
     #revenue {
         margin-top: 40px;
-        margin-left: 30%;
+        margin-left: 23%;
     }
     .information {
         margin-top: 1000px;
     }
     #project {
-        margin-left: 30%;
+        margin-left: 23%;
     }
     #orangeline2 {
         left: 100%;
@@ -3380,7 +3380,7 @@ svg.svg {
     } 
     #clients {
         margin-top: -70px;
-        margin-left: 22%;
+        margin-left: 15%;
         width: 250px;
     }
     .advantages {
@@ -3540,7 +3540,7 @@ svg.svg {
     }
     #backtext1 {
         font-size: 30px;
-        width: 300px;
+        width: 400px;
     }
     #backtext2 {
         font-size: 16px;
@@ -3567,6 +3567,15 @@ svg.svg {
     #opiniontext {
         font-size: 30px;
         width: 600px;
+    }
+    #project {
+        width: 420px;
+    } 
+    #clients {
+        width: 420px;
+    }
+    #revenue {
+        width: 420px;
     }
 }
 
