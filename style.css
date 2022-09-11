@@ -3050,18 +3050,20 @@ svg.svg {
 .threeLines {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 80px;
     left: 6%;
 }
 
 .mobileNavbar {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
     position: fixed;
     top: 0;
     transform: translateX(-100%);
     transition: .6s;
-    z-index: 100;
+    z-index: 100000000000000;
 }
 
 .mainmobileNavBar {
@@ -3330,6 +3332,9 @@ svg.svg {
 }
 
 @media (max-width: 800px) {
+    #body {
+        width: 800px;
+    }
     #news {
         display: none;
     }
@@ -3519,6 +3524,9 @@ svg.svg {
 }
 
 @media (max-width: 670px) {
+    #body {
+        width: 670px;
+    }
     #backtext1 {
         font-size: 30px;
         width: 300px;
