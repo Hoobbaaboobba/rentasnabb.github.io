@@ -1533,10 +1533,12 @@ a {
   }
   
   .splide__arrow--next {
+    z-index: 1;
     right: -0.8rem;
 }
 
 .splide__arrow--prev {
+    z-index: 1;
     left: -0.8rem;
 }
 
@@ -2758,7 +2760,7 @@ svg.svg {
     align-items: center;
     background: #F9A825;
     position: fixed;
-    z-index: 10000000101;
+    z-index: 10000000101392398484737754;
     right: 0;
     top: 70vh;
     cursor: pointer;
@@ -3116,7 +3118,7 @@ svg.svg {
     background: white;
     width: 90%;
     height: 1px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .mobileCross {
@@ -3286,7 +3288,83 @@ svg.svg {
     }
 }
 
+.MoscowMap2 {
+    display: none;
+}
+
+.SevMap2 {
+    display: none;
+} 
+
 @media (max-width: 1199px) {
+    .MoscowAndSev {
+        width: 800px;
+        height: 600px;
+        background: white;
+        margin: 60px auto;
+        transform: scale(0);
+        transition: .6s;
+        display: flex;
+        z-index: -100;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .MapContainer {
+        margin-bottom: -40px;
+    }
+
+    .MoscowMap {
+        display: none;
+    }
+
+    .SevMapContainer {
+        width: 320px;
+    }
+
+    .MoscowMapContainer {
+        width: 320px;
+    }
+
+    .crossbuttonLocation {
+        margin-left: 750px;
+        font-size: 20px;
+    }
+
+    #MoscowText1 {
+        margin-left: 140px;
+    }
+
+    #SevText1 {
+        margin-left: 70px;
+    }
+
+    .SevMap {
+        display: none;
+    }
+    
+    #MoscowText2 {
+        margin-left: 30px;
+        font-size: 14px;
+        width: 320px;
+    }
+
+    #SevText2 {
+        margin-left: 0;
+    }
+    
+    .MoscowMap2 {
+        width: 320px;
+        margin-left: 20px;
+        display: block;
+    }
+
+    .SevMap2 {
+        margin-left: -20px;
+        display: block;
+    } 
+
     .backtext {
         margin-top: 140px;
     }
@@ -3342,11 +3420,135 @@ svg.svg {
     }
 }
 
+.MoscowMap3 {
+    display: none;
+}
+
+.SevMap3 {
+    display: none;
+}
+
 @media (max-width: 800px) {
+    .MoscowAndSev {
+        width: 380px;
+        height: 700px;
+        background: white;
+        margin: 10px auto;
+        transform: scale(0);
+        transition: .6s;
+        display: flex;
+        z-index: -100;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 90px;
+    }
+    .MoscowMap2 {
+        display: none;
+    }
+    .SevMap2 {
+        display: none;
+    }
+    .SevMap3 {
+        display: block;
+    }
+    .MoscowMap3 {
+        display: block;
+    }
+    .crossbuttonLocation {
+        margin-left: 330px;
+        font-size: 18px;
+    }
+    .MapContainer {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .SevMapContainer {
+        width: 340px;
+        height: 300px;
+    }
+
+    #SevText1 {
+        margin-left: 95px;
+    }
+
+    #MoscowText2 {
+        margin-left: 0;
+    }
+
+    #MoscowText1 {
+        margin-left: 120px;
+    }
+
+    .MoscowMapContainer {
+        width: 340px;
+        height: 300px;
+        margin-right: 0;
+    }
+
+    .SevMapContainer {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .MoscowMap3 {
+        width: 340px;
+        height: 200px;
+    }
+
+    #mapText {
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .SevMap3
+
+    #mapText {
+        margin-bottom: 0;
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    .MoscowAndSev {
+        padding-bottom: 140px;
+    }
+    #btnreq3 {
+        font-size: 20px;
+        margin-left: 510px;
+    }
+    .requestionitself {
+        height: 700px;
+        width: 550px;
+    }
+    #name {
+        width: 470px;
+    }
+    #phone {
+        width: 470px;
+    }
+    #post {
+        width: 470px;
+    }
+    #msg {
+        width: 470px;
+    }
+    #names {
+        width: 470px;
+    }
+    #phones {
+        width: 470px;
+    }
+    .overview {
+        margin-top: 30px;
+    }
+    .mobileWhiteLine {
+        margin: 8px;
+    }
     .mainmobileNavBar {
         width: 88%;
     }
     .ad {
+        transform: scale(0.9);
         right: 5px;
     }
     #news {
@@ -3538,6 +3740,10 @@ svg.svg {
 }
 
 @media (max-width: 670px) {
+    .ad {
+        transform: scale(0.9);
+        right: 5px;
+    }
     #backtext1 {
         font-size: 30px;
         width: 400px;
@@ -3613,12 +3819,70 @@ svg.svg {
     .mainmobileNavBar {
         width: 85%;
     }
+    .ad {
+        transform: scale(0.7);
+        right: -20px;
+    }
+}
+
+@media (max-width: 550px) {
+    #btnreq3 {
+        margin-left: 350px;
+    }
+    .requestionitself {
+        margin-top: 30px;
+        height: 710px;
+        width: 380px;
+    }
+    #btnreq1 {
+        font-size: 18px;
+    }
+    #btnreq2 {
+        font-size: 18px;
+    }
+    #btnreq3 {
+        font-size: 18px;
+    }
+    #orangeborderbottom1 {
+        width: 160px;
+    }
+    #orangeborderbottom2 {
+        width: 150px;
+        margin-left: 190px;
+    }
+    #name {
+        width: 340px;
+        margin-left: 20px;
+    }
+    #phone {
+        width: 340px;
+        margin-left: 20px;
+    }
+    #post {
+        width: 340px;
+        margin-left: 20px;
+    }
+    #msg {
+        width: 340px;
+        margin-left: 20px;
+    }
+    #names {
+        width: 340px;
+        margin-left: 20px;
+    }
+    #phones {
+        width: 340px;
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 460px) {
     #backtext1 {
         font-size: 28px;
         width: 350px;
+    }
+    .ad {
+        right: -50px;
     }
 }
 
