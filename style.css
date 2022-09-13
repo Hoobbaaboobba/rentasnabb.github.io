@@ -1533,10 +1533,12 @@ a {
   }
   
   .splide__arrow--next {
+    z-index: 1;
     right: -0.8rem;
 }
 
 .splide__arrow--prev {
+    z-index: 1;
     left: -0.8rem;
 }
 
@@ -2758,7 +2760,7 @@ svg.svg {
     align-items: center;
     background: #F9A825;
     position: fixed;
-    z-index: 10000000101;
+    z-index: 10000000101392398484737754;
     right: 0;
     top: 70vh;
     cursor: pointer;
@@ -3116,7 +3118,7 @@ svg.svg {
     background: white;
     width: 90%;
     height: 1px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .mobileCross {
@@ -3343,10 +3345,39 @@ svg.svg {
 }
 
 @media (max-width: 800px) {
+    .requestionitself {
+        height: 700px;
+        width: 550px;
+    }
+    #name {
+        width: 470px;
+    }
+    #phone {
+        width: 470px;
+    }
+    #post {
+        width: 470px;
+    }
+    #msg {
+        width: 470px;
+    }
+    #names {
+        width: 470px;
+    }
+    #phones {
+        width: 470px;
+    }
+    .overview {
+        margin-top: 30px;
+    }
+    .mobileWhiteLine {
+        margin: 10px;
+    }
     .mainmobileNavBar {
         width: 88%;
     }
     .ad {
+        transform: scale(0.9);
         right: 5px;
     }
     #news {
@@ -3612,6 +3643,45 @@ svg.svg {
     }
     .mainmobileNavBar {
         width: 85%;
+    }
+    .ad {
+        transform: scale(0.8);
+    }
+    .requestionitself {
+        margin-top: 30px;
+        height: 710px;
+        width: 410px;
+    }
+    #btnreq1 {
+        font-size: 20px;
+    }
+    #btnreq2 {
+        font-size: 20px;
+    }
+    #orangeborderbottom1 {
+        width: 170px;
+    }
+    #orangeborderbottom2 {
+        width: 150px;
+        margin-left: 210px;
+    }
+    #name {
+        width: 330px;
+    }
+    #phone {
+        width: 330px;
+    }
+    #post {
+        width: 330px;
+    }
+    #msg {
+        width: 330px;
+    }
+    #names {
+        width: 330px;
+    }
+    #phones {
+        width: 330px;
     }
 }
 
