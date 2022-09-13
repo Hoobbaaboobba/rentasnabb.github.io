@@ -3345,6 +3345,10 @@ svg.svg {
 }
 
 @media (max-width: 800px) {
+    #btnreq3 {
+        font-size: 20px;
+        margin-left: 510px;
+    }
     .requestionitself {
         height: 700px;
         width: 550px;
@@ -3371,7 +3375,7 @@ svg.svg {
         margin-top: 30px;
     }
     .mobileWhiteLine {
-        margin: 10px;
+        margin: 8px;
     }
     .mainmobileNavBar {
         width: 88%;
@@ -3647,41 +3651,56 @@ svg.svg {
     .ad {
         transform: scale(0.8);
     }
+}
+
+@media (max-width: 550px) {
+    #btnreq3 {
+        margin-left: 350px;
+    }
     .requestionitself {
         margin-top: 30px;
         height: 710px;
-        width: 410px;
+        width: 380px;
     }
     #btnreq1 {
-        font-size: 20px;
+        font-size: 18px;
     }
     #btnreq2 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    #btnreq3 {
+        font-size: 18px;
     }
     #orangeborderbottom1 {
-        width: 170px;
+        width: 160px;
     }
     #orangeborderbottom2 {
         width: 150px;
-        margin-left: 210px;
+        margin-left: 190px;
     }
     #name {
-        width: 330px;
+        width: 340px;
+        margin-left: 20px;
     }
     #phone {
-        width: 330px;
+        width: 340px;
+        margin-left: 20px;
     }
     #post {
-        width: 330px;
+        width: 340px;
+        margin-left: 20px;
     }
     #msg {
-        width: 330px;
+        width: 340px;
+        margin-left: 20px;
     }
     #names {
-        width: 330px;
+        width: 340px;
+        margin-left: 20px;
     }
     #phones {
-        width: 330px;
+        width: 340px;
+        margin-left: 20px;
     }
 }
 
