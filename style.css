@@ -3343,8 +3343,11 @@ svg.svg {
 }
 
 @media (max-width: 800px) {
-    #body {
-        width: 800px;
+    .mainmobileNavBar {
+        width: 88%;
+    }
+    .ad {
+        right: 5px;
     }
     #news {
         display: none;
@@ -3381,7 +3384,7 @@ svg.svg {
     #clients {
         margin-top: -70px;
         margin-left: 15%;
-        width: 250px;
+        width: 300px;
     }
     .advantages {
         z-index: 0;
@@ -3535,22 +3538,27 @@ svg.svg {
 }
 
 @media (max-width: 670px) {
-    #body {
-        width: 670px;
-    }
     #backtext1 {
         font-size: 30px;
-        width: 4f00px;
+        width: 400px;
     }
     #backtext2 {
         font-size: 16px;
         width: 300px;
     }
     .advantages {
-        width: 600px;
+        z-index: 0;
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background: white;
+        top: 430px;
+        width: 100%;
+        height: 343px;
     }
     .buttons {
-        width: 600px;
+        width: 100%;
+        max-width: 670px;
     }
     #out-1 {
         font-size: 80px;
@@ -3569,17 +3577,53 @@ svg.svg {
         width: 600px;
     }
     #project {
-        width: 420px;
+        width: 410px;
     } 
     #clients {
-        width: 420px;
+        width: 410px;
     }
     #revenue {
-        width: 420px;
+        width: 410px;
+    }
+    #opiniontext {
+        width: 100%;
+        max-width: 670px;
+    }
+    #logo {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 532px) {
+    #project {
+        width: 300px;
+    } 
+    #clients {
+        width: 300px;
+    }
+    #revenue {
+        width: 300px;
+    }
+    .backtext {
+        margin-left: 10%;
+    }
+    .locations {
+        bottom: 40px;
+    }
+    .mainmobileNavBar {
+        width: 85%;
+    }
+}
+
+@media (max-width: 460px) {
+    #backtext1 {
+        font-size: 28px;
+        width: 350px;
     }
 }
 
 .opinionContainer {
+    width: 100%;
     height: 500px;
 }
 
@@ -3591,6 +3635,7 @@ svg.svg {
     font-size: 36px;
     font-weight: 700;
     margin-top: 40px;
+    padding: 0px 30px;
 }
 
 .rbd-core-ui {
