@@ -3116,7 +3116,7 @@ svg.svg {
     background: white;
     width: 90%;
     height: 1px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .mobileCross {
@@ -3343,6 +3343,9 @@ svg.svg {
 }
 
 @media (max-width: 800px) {
+    .mobileWhiteLine {
+        margin: 15px;
+    }
     .mainmobileNavBar {
         width: 88%;
     }
